@@ -1,0 +1,22 @@
+/MotorcycleRental
+    /Domain
+        /Entities       # Motorcycle, Rental, User, etc.
+        /ValueObjects   # Objects with no conceptual identity (e.g., Money, Email)
+        /Aggregates     # Cluster of domain objects treated as a single unit
+        /Repositories   # Interfaces for accessing entities
+        /Services       # Domain services containing business logic
+    /Application
+        /Services       # Application services handling use cases
+        /DTOs           # Data Transfer Objects for external data exchange
+        /Interfaces     # Interfaces for external services, e.g., IEmailService
+        /Mappings       # Automapper profiles or other mapping configurations
+    /Infrastructure
+        /Data           # EF Core DbContext, data configurations
+        /Repositories   # Implementations of domain repositories
+        /Services       # Implementations of external services interfaces
+    /Presentation
+        /API            # Controllers and endpoints
+        /ViewModels     # ViewModels if needed for complex data shaping
+    /SharedKernel
+        /Interfaces     # Common interfaces
+        /Services       # Services used across the application
